@@ -19,8 +19,10 @@ add_action('init', 'initialize_showcase_meta_box', 9999 );
 
 /** LOAD --- Related CSS and JS */
 
-function load_custom_cmb2_script() {<br>
+function load_custom_cmb2_script() {
+
 wp_enqueue_style( 'cmb2_switch-css', 'switch_metafield.css', false, '1.0.0' );
+
 wp_enqueue_script( 'cmb2_switch-js', 'switch_metafield.js' , '', '1.0.0', true );
 }
 
