@@ -10,19 +10,18 @@
 /** START --- Initialize the CMB2 Metabox & Related Classes */
 
 function initialize_showcase_meta_box() {
- require_once('switch_metafield.php');			
+
+ require_once('switch_metafield.php');
+ 
 }
 add_action('init', 'initialize_showcase_meta_box', 9999 );
 
 
 /** LOAD --- Related CSS and JS */
 
-function load_custom_cmb2_script() {
-
+function load_custom_cmb2_script() {<br>
 wp_enqueue_style( 'cmb2_switch-css', 'switch_metafield.css', false, '1.0.0' );
-
 wp_enqueue_script( 'cmb2_switch-js', 'switch_metafield.js' , '', '1.0.0', true );
-
 }
 
 add_action( 'admin_enqueue_scripts', 'load_custom_cmb2_script', 20 );
